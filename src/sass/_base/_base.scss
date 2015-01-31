@@ -1,0 +1,26 @@
+//------------------------------------------------------------------------
+//  $Main
+//------------------------------------------------------------------------
+
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+}
+
+body {
+    background: $white;
+    font: em($base-font-size)/($base-line-height/$base-font-size) $ff-primary;
+    color: $black;
+}
+
+a {
+    color: $black;
+}
