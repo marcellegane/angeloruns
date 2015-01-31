@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------
+//  $Headings
+//------------------------------------------------------------------------
+
+
+h1,
+.alpha {
+    font: em(24) $ff-primary;
+
+    @include breakpoint($m) {
+        font-size: em(54);
+    }
+}
+
+h2,
+.beta {
+    font: em(24) $ff-primary;
+
+    @include breakpoint($m) {
+        font-size: em(36);
+    }
+}
+
+h3,
+.gamma {
+    font: em(18) $ff-primary;
+
+    @include breakpoint($m) {
+        font-size: em(24);
+    }
+}
+
+h4,
+.delta {
+    font: em(16) $ff-primary;
+
+    @include breakpoint($m) {
+        font-size: em(18);
+    }
+}
+
