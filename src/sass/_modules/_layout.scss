@@ -4,17 +4,19 @@
 
 
 .flow > * + * {
-    margin-top: 1em;
+   margin-top: 1em;
 }
 
 
-//------------------------------------------------------------------------
-//  $Wrappers
-//------------------------------------------------------------------------
+.row {
+    background: $blue;
+    background: linear-gradient(to bottom, $blue 0%, $dark-blue 100%);
+}
 
-
-.wrapper {
+.center {
     max-width: em($max-width);
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }

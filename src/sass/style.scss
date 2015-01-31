@@ -15,7 +15,7 @@
 
 @import "_base/normalize"; // Simplified HTML5 normalize
 @import "_base/base";
-@import "_base/grid";
+// @import "_base/grid";
 @import "_base/utilities"; // Object classes and placeholders
 
 
@@ -24,7 +24,7 @@
 //------------------------------------------------------------------------
 
 
-@import "_typography/font-face";
+// @import "_typography/font-face";
 @import "_typography/headings";
 @import "_typography/typography";
 
@@ -44,5 +44,5 @@
 
 @import "_modules/layout";
 @import "_modules/header";
-@import "_modules/navigation";
+// @import "_modules/navigation";
 @import "_modules/footer";

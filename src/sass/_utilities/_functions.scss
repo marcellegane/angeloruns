@@ -4,7 +4,7 @@
 
 
 @function em($pixels, $context: $base-font-size) {
-    @return #{$pixels/$context}em;
+   @return #{$pixels/$context}em;
 }
 
 
@@ -14,7 +14,7 @@
 
 
 @function ls($context) {
-    @return #{$context/1000}em;
+   @return #{$context/1000}em;
 }
 
 
@@ -34,5 +34,5 @@
 
 
 @function col-width($col-width, $col-total: $cols) {
-    @return unquote( (100/$col-total) * $col-width + '%' );
+   @return unquote( (100/$col-total) * $col-width + '%' );
 }

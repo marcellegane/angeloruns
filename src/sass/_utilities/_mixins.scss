@@ -4,21 +4,21 @@
 
 
 @mixin breakpoint($breakpoint, $type: 'min') {
-    @media only screen and (#{$type}-width: em($breakpoint)) {
-        @content;
-    }
+   @media only screen and (#{$type}-width: em($breakpoint)) {
+      @content;
+   }
 }
 
 @mixin retina($breakpoint) {
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: em($breakpoint)),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
-    only screen and (                min-resolution: 192dpi) and (min-width: em($breakpoint)),
-    only screen and (                min-resolution: 2dppx)  and (min-width: em($breakpoint)) {
-      @content
-    }
+   @media
+   only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
+   only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
+   only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: em($breakpoint)),
+   only screen and (        min-device-pixel-ratio: 2)      and (min-width: em($breakpoint)),
+   only screen and (                min-resolution: 192dpi) and (min-width: em($breakpoint)),
+   only screen and (                min-resolution: 2dppx)  and (min-width: em($breakpoint)) {
+     @content
+   }
 }
 
 
@@ -28,13 +28,13 @@
 
 
 @mixin inline-block() {
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
+   display: -moz-inline-stack;
+   display: inline-block;
+   zoom: 1;
 
-    .ie7 & {
-        display: inline;
-    }
+   .ie7 & {
+      display: inline;
+   }
 }
 
 
@@ -45,33 +45,33 @@
 
 @mixin img-bg($filetype, $src, $size:100%) {
 
-    @if $filetype == "svg" {
-        background-image: url(#{$src}.png);
-        .svg & { background-image: url(#{$src}.svg); }
-    }
+   @if $filetype == "svg" {
+      background-image: url(#{$src}.png);
+      .svg & { background-image: url(#{$src}.svg); }
+   }
 
-    @if $filetype == "png" {
-        background-image: url(#{$src}.png);
-        @media (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi) {
-            background-image: url(#{$src}@2x.png);
-            background-size: $size;
-            .lt-ie9 & {
-                background-image: url(#{$src}.png);
-            }
-        }
-    }
+   @if $filetype == "png" {
+      background-image: url(#{$src}.png);
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+         background-image: url(#{$src}@2x.png);
+         background-size: $size;
+         .lt-ie9 & {
+            background-image: url(#{$src}.png);
+         }
+      }
+   }
 
-    @if $filetype == "jpg" {
-        background-image: url(#{$src}.jpg);
-        @media (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi) {
-            background-image: url(#{$src}@2x.jpg);
-            background-size: $size;
-            .lt-ie9 & {
-                background-image: url(#{$src}.jpg);
-            }
-        }
-    }
+   @if $filetype == "jpg" {
+      background-image: url(#{$src}.jpg);
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+         background-image: url(#{$src}@2x.jpg);
+         background-size: $size;
+         .lt-ie9 & {
+            background-image: url(#{$src}.jpg);
+         }
+      }
+   }
 
 }

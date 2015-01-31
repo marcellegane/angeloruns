@@ -4,17 +4,17 @@
 
 
 .grid {
-    @extend %clearfix;
-    margin-left: em(-$gtr-half);
-    margin-right: em(-$gtr-half);
+   @extend %clearfix;
+   margin-left: em(-$gtr-half);
+   margin-right: em(-$gtr-half);
 }
 
 .col {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
+   width: 100%;
+   display: inline-block;
+   vertical-align: top;
 }
 
 .col-gtr {
-    padding: 0 em($gtr-half);
+   padding: 0 em($gtr-half);
 }

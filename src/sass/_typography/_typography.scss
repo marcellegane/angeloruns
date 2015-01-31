@@ -4,12 +4,12 @@
 
 
 br {
-    display: none;
-    font-size: 0;
+   display: none;
+   font-size: 0;
 
-    @include breakpoint($s) {
-        display: block;
-    }
+   @include breakpoint($s) {
+      display: block;
+   }
 }
 
 
@@ -19,10 +19,10 @@ br {
 
 
 .text-s {
-    font-size: em(14);
+   font-size: em(14);
 }
 
 .text-l {
-    font-size: em(18);
+   font-size: em(18);
 }
 
