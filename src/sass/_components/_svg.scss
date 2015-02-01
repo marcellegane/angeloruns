@@ -1,0 +1,111 @@
+//------------------------------------------------------------------------
+//  $SVGs
+//------------------------------------------------------------------------
+
+
+.svg-container {
+   position: relative;
+   display: inline-block;
+   height: 0;
+
+   svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+}
+
+.kong {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      right: em(-60);
+      bottom: em(-10);
+      width: em(464);
+      padding-top: em(940);
+   }
+}
+
+.heels {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      margin-top: em(-302);
+      width: em(299);
+      padding-top: em(604);
+   }
+}
+
+.space {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: em(-326);
+      width: em(552);
+      padding-top: em(653);
+   }
+}
+
+.mountain {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      left: em(-80);
+      bottom: 0;
+      width: em(676);
+      padding-top: em(743);
+   }
+}
+
+.dog {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: em(-276);
+      width: em(342);
+      padding-top: em(552);
+   }
+}
+
+.titanic {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      left: em(-200);
+      margin-top: em(-115);
+      width: em(604);
+      padding-top: em(230);
+   }
+}
+
+.dome {
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: em(-120);
+      margin-top: em(-110);
+      width: em(672);
+      padding-top: em(220);
+   }
+}

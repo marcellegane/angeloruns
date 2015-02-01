@@ -117,7 +117,7 @@ gulp.task('watch', function() {
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.js, ['js']);
     gulp.watch(paths.jsHead, ['jsHead']);
-    gulp.watch(paths.img, ['imagemin']);
+    // gulp.watch(paths.img, ['imagemin']);
 });
 
 
