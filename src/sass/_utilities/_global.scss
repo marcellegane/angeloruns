@@ -6,12 +6,13 @@
 $base-font-size   : 16;
 $base-line-height : 24;
 
-$ff-primary   : Verdana, sans-serif;
-$ff-secondary : Georgia, serif;
+$ff-primary   : "proxima-nova", sans-serif;
+$ff-secondary : "jaf-bernino-sans-comp", sans-serif;
 
+$fw-thin       : 100;
 $fw-light      : 300;
 $fw-normal     : 400;
-$fw-medium     : 600;
+$fw-semibold   : 600;
 $fw-bold       : 700;
 
 
@@ -26,6 +27,9 @@ $black: #000;
 $blue: #277695;
 $dark-blue: #1d5970;
 $navy: #0F2D38;
+
+$red: #FF573B;
+$dark-red: #BF412C;
 
 
 //------------------------------------------------------------------------

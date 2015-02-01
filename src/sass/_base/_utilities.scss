@@ -19,6 +19,12 @@
    -webkit-perspective: 1000;
 }
 
+.right {
+   @include breakpoint($m) {
+      float: right;
+   }
+}
+
 
 //------------------------------------------------------------------------
 //  $Typography

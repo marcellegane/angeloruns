@@ -4,5 +4,7 @@
 
 .footer {
    @extend .ta-c;
+   padding: 1em;
+   color: $blue;
    background-color: $navy;
 }
