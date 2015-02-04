@@ -327,6 +327,98 @@ br {
       width: 18.6875em;
       padding-top: 37.75em; } }
 
+.heels__sweat path {
+  -webkit-transform-origin: 50%;
+     -moz-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: sweat 1.5s linear infinite;
+     -moz-animation: sweat 1.5s linear infinite;
+          animation: sweat 1.5s linear infinite; }
+  .heels__sweat path:first-child {
+    display: none;
+    -webkit-animation-delay: 0.25s;
+       -moz-animation-delay: 0.25s;
+            animation-delay: 0.25s; }
+
+@-webkit-keyframes sweat {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, -1.8em, 0);
+            transform: translate3d(0, -1.8em, 0); }
+
+  20% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+  35% {
+    -webkit-transform: translate3d(0, -2.2em, 0);
+            transform: translate3d(0, -2.2em, 0); }
+
+  70% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
+@-moz-keyframes sweat {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -moz-transform: translate3d(0, -1.8em, 0);
+         transform: translate3d(0, -1.8em, 0); }
+
+  20% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+  35% {
+    -moz-transform: translate3d(0, -2.2em, 0);
+         transform: translate3d(0, -2.2em, 0); }
+
+  70% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0); }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
+@keyframes sweat {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, -1.8em, 0);
+       -moz-transform: translate3d(0, -1.8em, 0);
+            transform: translate3d(0, -1.8em, 0); }
+
+  20% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+  35% {
+    -webkit-transform: translate3d(0, -2.2em, 0);
+       -moz-transform: translate3d(0, -2.2em, 0);
+            transform: translate3d(0, -2.2em, 0); }
+
+  70% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
 .space {
   width: 8.125em;
   padding-top: 16.25em; }
