@@ -32,21 +32,22 @@
 
 .center-s {
     @extend %wrapper;
-    max-width: em(565);
+    max-width: em(600);
     padding-top: em($gtr*2);
     padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
-        padding-top: em(200);
+        padding-top: em(150);
         padding-bottom: em(200);
     }
 }
 
 .center-m {
     @extend %wrapper;
-    max-width: em(760);
+    max-width: em(680);
     padding-top: em($gtr*2);
     padding-bottom: em(100);
+    text-align: center;
 
     @include breakpoint($m) {
         padding-top: em(200);

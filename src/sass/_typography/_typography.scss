@@ -8,7 +8,7 @@ p {
    font-weight: $fw-light;
 
    @include breakpoint($s) {
-      font-size: em(20);
+      font-size: em(24);
       line-height: 1.3;
    }
 }

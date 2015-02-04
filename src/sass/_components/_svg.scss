@@ -63,8 +63,8 @@
       animation: sweat 1.5s linear infinite;
 
       &:first-child {
-         display: none;
-         animation-delay: 0.25s;
+         // display: none;
+         animation: sweat 1.5s 0.1s linear infinite;
       }
    }
 }
@@ -72,24 +72,60 @@
 @keyframes sweat {
    0% {
       opacity: 0;
-      transform: translate3d(0,-1.8em,0);
+      transform: translateX(2em) translateY(-2em) rotate(70deg);
    }
 
    20% {
       opacity: 1;
+      transform: translateX(0.5em) translateY(-2.5em) rotate(45deg);
    }
 
-   35% {
-      transform: translate3d(0,-2.2em,0);
+   25% {
+      transform: translateX(0.4em) translateY(-2.3em) rotate(45deg);
    }
 
-   70% {
+   40% {
+      transform: translateX(0.25em) translateY(-1em) rotate(0);
+   }
+
+   60% {
+      transform: translateX(0) translateY(0) rotate(-20deg);
+   }
+
+   80% {
       opacity: 1;
-      transform: translate3d(0,0,0);
+      transform: translateX(0) translateY(0) rotate(-20deg);
    }
 
    100% {
       opacity: 0;
+      transform: translateX(0) translateY(0) rotate(-20deg);
+   }
+}
+
+.tounge {
+   animation: tounge 1s ease infinite;
+}
+
+@keyframes tounge {
+   0% {
+      transform: translateX(0);
+   }
+
+   25% {
+      transform: translateX(0.05em);
+   }
+
+   50% {
+      transform: translateX(0);
+   }
+
+   75% {
+      transform: translateX(-0.05em);
+   }
+
+   100% {
+      transform: translateX();
    }
 }
 
@@ -108,8 +144,59 @@
       top: 50%;
       right: 0;
       margin-top: em(-326);
-      width: em(552);
-      padding-top: em(653);
+      width: em(550);
+      padding-top: em(652);
+   }
+}
+
+.planet {
+   transform-origin: 50%;
+   animation: planet 3s ease infinite;
+}
+
+@keyframes planet {
+   0% {
+      transform: rotate(0)
+   }
+
+   25% {
+      transform: rotate(3deg)
+   }
+
+   75% {
+      transform: rotate(-3deg)
+   }
+
+   100% {
+      transform: rotate(0)
+   }
+}
+
+.star {
+   animation: twinkle 2s ease infinite;
+}
+
+.star1 { animation-delay: 0.2s; }
+.star2 { animation-delay: 0.4s; }
+.star3 { animation-delay: 0.6s; }
+.star4 { animation-delay: 0.8s; }
+.star5 { animation-delay: 0.3s; }
+.star6 { animation-delay: 0.5s; }
+.star7 { animation-delay: 0.7s; }
+.star8 { animation-delay: 0.9s; }
+.star9 { animation-delay: 1s; }
+
+@keyframes twinkle {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
    }
 }
 
