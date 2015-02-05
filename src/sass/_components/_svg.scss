@@ -263,10 +263,34 @@
    @include breakpoint($m) {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: em(50);
       margin-top: em(-276);
-      width: em(342);
+      width: em(404);
       padding-top: em(552);
+   }
+}
+
+.drop {
+   animation: drop 2.5s ease-in infinite;
+}
+
+.drop-2 {
+   animation-delay: 0.8s;
+}
+
+.drop-3 {
+   animation-delay: 1.4s;
+}
+
+@keyframes drop {
+   0% {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+   }
+
+   75%, 100% {
+      opacity: 0;
+      transform: translate3d(0,em(40),0);
    }
 }
 
@@ -287,6 +311,57 @@
       margin-top: em(-115);
       width: em(604);
       padding-top: em(230);
+   }
+}
+
+.iceberg1,
+.iceberg2 {
+   position: absolute;
+}
+
+.iceberg1 {
+   left: 30%;
+   width: em(130);
+   padding-top: em(260);
+   animation: iceberg1 80s linear infinite alternate;
+
+   @include breakpoint($m) {
+      bottom: em(240);
+      width: em(138);
+      padding-top: em(82);
+   }
+}
+
+@keyframes iceberg1 {
+   0% {
+      left: 30%;
+   }
+
+   100% {
+      left: 110%;
+   }
+}
+
+.iceberg2 {
+   left: 80%;
+   width: em(130);
+   padding-top: em(260);
+   animation: iceberg2 70s linear infinite alternate;
+
+   @include breakpoint($m) {
+      bottom: em(130);
+      width: em(118);
+      padding-top: em(78);
+   }
+}
+
+@keyframes iceberg2 {
+   0% {
+      left: 80%;
+   }
+
+   100% {
+      left: -10%;
    }
 }
 

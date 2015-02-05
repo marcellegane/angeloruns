@@ -811,10 +811,66 @@ br {
     .dog {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 3.125em;
       margin-top: -17.25em;
-      width: 21.375em;
+      width: 25.25em;
       padding-top: 34.5em; } }
+
+.drop {
+  -webkit-animation: drop 2.5s ease-in infinite;
+     -moz-animation: drop 2.5s ease-in infinite;
+          animation: drop 2.5s ease-in infinite; }
+
+.drop-2 {
+  -webkit-animation-delay: 0.8s;
+     -moz-animation-delay: 0.8s;
+          animation-delay: 0.8s; }
+
+.drop-3 {
+  -webkit-animation-delay: 1.4s;
+     -moz-animation-delay: 1.4s;
+          animation-delay: 1.4s; }
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  75%, 100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, 2.5em, 0);
+            transform: translate3d(0, 2.5em, 0); } }
+
+@-moz-keyframes drop {
+  0% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0); }
+
+  75%, 100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -moz-transform: translate3d(0, 2.5em, 0);
+         transform: translate3d(0, 2.5em, 0); } }
+
+@keyframes drop {
+  0% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  75%, 100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, 2.5em, 0);
+       -moz-transform: translate3d(0, 2.5em, 0);
+            transform: translate3d(0, 2.5em, 0); } }
 
 .titanic {
   width: 8.125em;
@@ -827,6 +883,77 @@ br {
       margin-top: -7.1875em;
       width: 37.75em;
       padding-top: 14.375em; } }
+
+.iceberg1, .iceberg2 {
+  position: absolute; }
+
+.iceberg1 {
+  left: 30%;
+  width: 8.125em;
+  padding-top: 16.25em;
+  -webkit-animation: iceberg1 80s linear infinite alternate;
+     -moz-animation: iceberg1 80s linear infinite alternate;
+          animation: iceberg1 80s linear infinite alternate; }
+  @media only screen and (min-width: 48em) {
+    .iceberg1 {
+      bottom: 15em;
+      width: 8.625em;
+      padding-top: 5.125em; } }
+
+@-webkit-keyframes iceberg1 {
+  0% {
+    left: 30%; }
+
+  100% {
+    left: 110%; } }
+
+@-moz-keyframes iceberg1 {
+  0% {
+    left: 30%; }
+
+  100% {
+    left: 110%; } }
+
+@keyframes iceberg1 {
+  0% {
+    left: 30%; }
+
+  100% {
+    left: 110%; } }
+
+.iceberg2 {
+  left: 80%;
+  width: 8.125em;
+  padding-top: 16.25em;
+  -webkit-animation: iceberg2 70s linear infinite alternate;
+     -moz-animation: iceberg2 70s linear infinite alternate;
+          animation: iceberg2 70s linear infinite alternate; }
+  @media only screen and (min-width: 48em) {
+    .iceberg2 {
+      bottom: 8.125em;
+      width: 7.375em;
+      padding-top: 4.875em; } }
+
+@-webkit-keyframes iceberg2 {
+  0% {
+    left: 80%; }
+
+  100% {
+    left: -10%; } }
+
+@-moz-keyframes iceberg2 {
+  0% {
+    left: 80%; }
+
+  100% {
+    left: -10%; } }
+
+@keyframes iceberg2 {
+  0% {
+    left: 80%; }
+
+  100% {
+    left: -10%; } }
 
 .dome {
   width: 8.125em;
@@ -882,6 +1009,7 @@ br {
   margin-top: 1em; }
 
 .row {
+  position: relative;
   overflow: hidden;
   background: #277695;
   background: -webkit-linear-gradient(top, #277695 20%, #1d5970 100%);
