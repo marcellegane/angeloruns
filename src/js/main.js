@@ -38,7 +38,13 @@
          yFactor = yFactor * -1;
       }
 
-      $head.css('transform', 'rotate(' + (yFactor * 70) + 'deg)');
+      $head.css({
+         '-o-transform': 'rotate(' + (yFactor * 70) + 'deg)',
+         '-ms-transform': 'rotate(' + (yFactor * 70) + 'deg)',
+         '-moz-transform': 'rotate(' + (yFactor * 70) + 'deg)',
+         '-webkit-transform': 'rotate(' + (yFactor * 70) + 'deg)',
+         'transform': 'rotate(' + (yFactor * 70) + 'deg)'
+      });
    });
 
 
