@@ -14,11 +14,9 @@ h1,
 
 h2,
 .beta {
-   font: em(24) $ff-primary;
-
-   @include breakpoint($m) {
-      font-size: em(36);
-   }
+   font: em(14) $ff-primary;
+   text-transform: uppercase;
+   letter-spacing: ls(200);
 }
 
 h3,

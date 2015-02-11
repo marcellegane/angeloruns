@@ -22,11 +22,13 @@
 
 
 .kong {
+   top: em(16);
    width: em(130);
    padding-top: em(260);
 
    @include breakpoint($m) {
       position: absolute;
+      top: auto;
       right: em(-60);
       bottom: em(-10);
       width: em(464);
@@ -47,6 +49,7 @@
 .heels {
    width: em(130);
    padding-top: em(260);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;
@@ -136,8 +139,9 @@
 
 
 .space {
-   width: em(130);
+   width: em(230);
    padding-top: em(260);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;
@@ -238,8 +242,9 @@
 
 
 .mountain {
-   width: em(130);
-   padding-top: em(260);
+   width: em(230);
+   padding-top: em(240);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;
@@ -250,6 +255,61 @@
    }
 }
 
+.snow {
+   position: absolute;
+   width: em(240);
+   padding-top: em(100);
+
+   @include breakpoint($m) {
+      top: em(40);
+      left: 0;
+      width: em(464);
+      padding-top: em(816);
+   }
+}
+
+.snowflake {
+   animation: snowfall 3s ease-in infinite;
+}
+
+.snowflake-2 {
+   animation-delay: 0.1s;
+}
+.snowflake-7 {
+   animation-delay: 0.9s;
+}
+.snowflake-6 {
+   animation-delay: 0.3s;
+}
+
+.snowflake-1 {
+   animation-delay: 0.7s;
+}
+.snowflake-5 {
+   animation-delay: 1s;
+}
+
+.snowflake-3 {
+   animation-delay: 1.4s;
+}
+.snowflake-4 {
+   animation-delay: 1.8s;
+}
+
+@keyframes snowfall {
+   0% {
+      transform: translate3d(0,0,0);
+   }
+   90% {
+      transform: translate3d(0,em(600),0);
+      opacity: 1;
+   }
+   100% {
+      transform: translate3d(0,em(630),0);
+      opacity: 0;
+   }
+}
+
 
 //------------------------------------------------------------------------
 //  $Dog
@@ -257,8 +317,9 @@
 
 
 .dog {
-   width: em(130);
+   width: em(180);
    padding-top: em(260);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;
@@ -301,8 +362,9 @@
 
 
 .titanic {
-   width: em(130);
-   padding-top: em(260);
+   width: em(260);
+   padding-top: em(110);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;
@@ -311,57 +373,97 @@
       margin-top: em(-115);
       width: em(604);
       padding-top: em(230);
+      animation: ship 16s ease-in-out infinite;
+   }
+}
+
+@keyframes ship {
+   0% {
+      transform: translate3d(0,0,0) rotate(0);
+   }
+
+   25% {
+      transform: translate3d(0,em(5),0) rotate(0.5deg);
+   }
+
+   50% {
+      transform: translate3d(0,0,0) rotate(0);
+   }
+
+   75% {
+      transform: translate3d(0,em(5),0) rotate(-0.5deg);
+   }
+
+   100% {
+      transform: translate3d(0,0,0) rotate(0);
    }
 }
 
 .iceberg1,
 .iceberg2 {
    position: absolute;
-}
-
-.iceberg1 {
-   left: 30%;
-   width: em(130);
-   padding-top: em(260);
-   animation: iceberg1 80s linear infinite alternate;
 
    @include breakpoint($m) {
-      bottom: em(240);
-      width: em(138);
-      padding-top: em(82);
+      width: 100%;
    }
 }
 
 @keyframes iceberg1 {
    0% {
-      left: 30%;
+      transform: translate3d(-50%,0,0);
    }
-
    100% {
-      left: 110%;
+      transform: translate3d(60%,0,0);
    }
 }
 
-.iceberg2 {
-   left: 80%;
-   width: em(130);
-   padding-top: em(260);
-   animation: iceberg2 70s linear infinite alternate;
+.iceberg1 {
+   left: 60%;
+   bottom: em(70);
 
    @include breakpoint($m) {
-      bottom: em(130);
-      width: em(118);
-      padding-top: em(78);
+      bottom: em(290);
+      animation: iceberg1 70s linear infinite alternate;
    }
 }
 
 @keyframes iceberg2 {
    0% {
-      left: 80%;
+      transform: translate3d(70%,0,0);
    }
 
    100% {
-      left: -10%;
+      transform: translate3d(-40%,0,0);
+   }
+}
+
+.iceberg2 {
+   left: 20%;
+   bottom: em(40);
+
+   @include breakpoint($m) {
+      bottom: em(220);
+      animation: iceberg2 90s linear infinite alternate;
+   }
+}
+
+.iceberg1__svg {
+   width: em(70);
+   padding-top: em(60);
+
+   @include breakpoint($m) {
+      width: em(138);
+      padding-top: em(82);
+   }
+}
+
+.iceberg2__svg {
+   width: em(80);
+   padding-top: em(54);
+
+   @include breakpoint($m) {
+      width: em(118);
+      padding-top: em(78);
    }
 }
 
@@ -372,8 +474,9 @@
 
 
 .dome {
-   width: em(130);
-   padding-top: em(260);
+   width: em(230);
+   padding-top: em(230);
+   margin-top: em($gtr);
 
    @include breakpoint($m) {
       position: absolute;

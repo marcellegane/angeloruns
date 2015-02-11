@@ -21,6 +21,7 @@
     max-width: em($max-width);
     margin-left: auto;
     margin-right: auto;
+    padding-top: em($gtr*2);
     padding-left: em($gtr);
     padding-right: em($gtr);
     z-index: 1;
@@ -34,7 +35,6 @@
 .center-s {
     @extend %wrapper;
     max-width: em(600);
-    padding-top: em($gtr*2);
     padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
@@ -46,7 +46,6 @@
 .center-m {
     @extend %wrapper;
     max-width: em(680);
-    padding-top: em($gtr*2);
     padding-bottom: em(100);
     text-align: center;
 
@@ -58,8 +57,6 @@
 
 .center-kong {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
 
     @include breakpoint($m) {
         padding-top: em(380);
@@ -69,8 +66,7 @@
 
 .center-heels {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
+    padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
         padding-top: em(400);
@@ -80,8 +76,7 @@
 
 .center-space {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
+    padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
         padding-top: em(380);
@@ -91,8 +86,6 @@
 
 .center-mountain {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
 
     @include breakpoint($m) {
         padding-top: em(320);
@@ -102,8 +95,7 @@
 
 .center-dog {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
+    padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
         padding-top: em(380);
@@ -113,8 +105,7 @@
 
 .center-titanic {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
+    padding-bottom: em(150);
 
     @include breakpoint($m) {
         padding-top: em(380);
@@ -124,8 +115,7 @@
 
 .center-02 {
     @extend %wrapper;
-    padding-top: em($gtr*2);
-    padding-bottom: em(600);
+    padding-bottom: em($gtr*2);
 
     @include breakpoint($m) {
         padding-top: em(380);

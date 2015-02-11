@@ -68,3 +68,18 @@ br {
       }
    }
 }
+
+.beta {
+   margin-bottom: 2em;
+   font: em(14) $ff-primary;
+   text-transform: uppercase;
+   letter-spacing: ls(200);
+   border-top: 1px solid $red;
+
+   span {
+      position: relative;
+      top: -0.6em;
+      padding: 0 4em;
+      background-color: $blue;
+   }
+}
