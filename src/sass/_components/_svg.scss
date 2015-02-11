@@ -160,23 +160,23 @@
 
 @keyframes float {
    0% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 
    25% {
-      transform: translate3d(0,em(5),0) rotate(1deg);
+      transform: translate(0,em(5)) rotate(1deg);
    }
 
    50% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 
    75% {
-      transform: translate3d(0,em(5),0) rotate(-1deg);
+      transform: translate(0,em(5)) rotate(-1deg);
    }
 
    100% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 }
 
@@ -298,14 +298,14 @@
 
 @keyframes snowfall {
    0% {
-      transform: translate3d(0,0,0);
+      transform: translate(0,0);
    }
    90% {
-      transform: translate3d(0,em(600),0);
+      transform: translate(0,em(600));
       opacity: 1;
    }
    100% {
-      transform: translate3d(0,em(630),0);
+      transform: translate(0,em(630));
       opacity: 0;
    }
 }
@@ -346,12 +346,12 @@
 @keyframes drop {
    0% {
       opacity: 1;
-      transform: translate3d(0,0,0);
+      transform: translate(0,0);
    }
 
    75%, 100% {
       opacity: 0;
-      transform: translate3d(0,em(40),0);
+      transform: translate(0,em(40));
    }
 }
 
@@ -379,23 +379,23 @@
 
 @keyframes ship {
    0% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 
    25% {
-      transform: translate3d(0,em(5),0) rotate(0.5deg);
+      transform: translate(0,em(5)) rotate(0.5deg);
    }
 
    50% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 
    75% {
-      transform: translate3d(0,em(5),0) rotate(-0.5deg);
+      transform: translate(0,em(5)) rotate(-0.5deg);
    }
 
    100% {
-      transform: translate3d(0,0,0) rotate(0);
+      transform: translate(0,0) rotate(0);
    }
 }
 
@@ -410,10 +410,10 @@
 
 @keyframes iceberg1 {
    0% {
-      transform: translate3d(-50%,0,0);
+      transform: translate(-50%,0);
    }
    100% {
-      transform: translate3d(60%,0,0);
+      transform: translate(60%,0);
    }
 }
 
@@ -429,11 +429,11 @@
 
 @keyframes iceberg2 {
    0% {
-      transform: translate3d(70%,0,0);
+      transform: translate(70%,0);
    }
 
    100% {
-      transform: translate3d(-40%,0,0);
+      transform: translate(-40%,0);
    }
 }
 

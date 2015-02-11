@@ -49,7 +49,7 @@ gulp.task('sass', function() {
             errLogToConsole: true
         }))
         .pipe(autoprefix({
-            browsers: ['> 10%', 'Firefox > 2', 'ie 8']
+            browsers: ['> 10%', 'Firefox > 2', 'Chrome > 5', 'ie 8']
         }))
         .pipe(postcss([opacity]))
         .pipe(gulp.dest(paths.css))
