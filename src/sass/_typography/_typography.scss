@@ -79,7 +79,11 @@ br {
    span {
       position: relative;
       top: -0.6em;
-      padding: 0 4em;
+      padding: 0 1.5em;
       background-color: $blue;
+
+      @include breakpoint($m) {
+         padding: 0 4em;
+      }
    }
 }

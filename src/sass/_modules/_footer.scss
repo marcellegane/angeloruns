@@ -2,6 +2,25 @@
 //  $Footer
 //------------------------------------------------------------------------
 
+
+.footer-row {
+    @extend %wrapper;
+    max-width: em(680);
+    padding-bottom: em(300);
+    text-align: center;
+    background: {
+        image: url('../img/angelo-wave.svg');
+        repeat: no-repeat;
+        position: center bottom;
+    }
+
+    @include breakpoint($m) {
+        padding-top: em(200);
+        padding-bottom: em(200);
+        background-position: left bottom;
+    }
+}
+
 .footer {
    @extend .ta-c;
    padding: 1em;
