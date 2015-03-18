@@ -4,6 +4,7 @@
 
 
 .clearfix {
+<<<<<<< HEAD
     *zoom: 1;
     &:before, &:after {
         content: " ";
@@ -17,6 +18,37 @@
 %jank {
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
+=======
+   *zoom: 1;
+   &:before, &:after {
+      content: " ";
+      display: table;
+   }
+   &:after {
+      clear: both;
+   }
+}
+
+%jank {
+   -webkit-backface-visibility: hidden;
+   -webkit-perspective: 1000;
+}
+
+.right {
+   @include breakpoint($m) {
+      float: right;
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Typography
+//------------------------------------------------------------------------
+
+
+.ta-c {
+   text-align: center;
+>>>>>>> gh-pages
 }
 
 

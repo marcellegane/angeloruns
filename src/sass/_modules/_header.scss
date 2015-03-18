@@ -5,3 +5,17 @@
 
 .header {}
 
+<<<<<<< HEAD
+=======
+.scroll {
+    display: inline-block;
+    width: em(40);
+    height: em(40);
+    margin-top: em(70);
+    background: {
+        image: url('../img/arrow-d.svg');
+        repeat: no-repeat;
+        position: center;
+    }
+}
+>>>>>>> gh-pages

@@ -4,6 +4,7 @@
 
 
 .flow > * + * {
+<<<<<<< HEAD
     margin-top: 1em;
 }
 
@@ -17,4 +18,128 @@
     max-width: em($max-width);
     margin-left: auto;
     margin-right: auto;
+=======
+   margin-top: 1em;
+}
+
+
+.row {
+    position: relative;
+    overflow: hidden;
+    background: $blue;
+    background: linear-gradient(to bottom, $blue 20%, $dark-blue 100%);
+}
+
+%wrapper {
+    @extend .clearfix;
+    position: relative;
+    max-width: em($max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: em($gtr*2);
+    padding-left: em($gtr);
+    padding-right: em($gtr);
+    z-index: 1;
+    text-align: center;
+
+    @include breakpoint($m) {
+        text-align: left;
+    }
+}
+
+.center-s {
+    @extend %wrapper;
+    max-width: em(600);
+    padding-bottom: em($gtr*2);
+
+    @include breakpoint($m) {
+        padding-top: em(150);
+        padding-bottom: em(75);
+        text-align: center;
+    }
+}
+
+.center-m {
+    @extend %wrapper;
+    max-width: em(680);
+    padding-bottom: em(100);
+    text-align: center;
+
+    @include breakpoint($m) {
+        padding-top: em(200);
+        padding-bottom: em(200);
+    }
+}
+
+.center-kong {
+    @extend %wrapper;
+
+    @include breakpoint($m) {
+        padding-top: em(380);
+        padding-bottom: em(420);
+    }
+
+    br {
+        display: block;
+    }
+}
+
+.center-heels {
+    @extend %wrapper;
+    padding-bottom: em($gtr*2);
+
+    @include breakpoint($m) {
+        padding-top: em(400);
+        padding-bottom: em(400);
+    }
+}
+
+.center-space {
+    @extend %wrapper;
+    padding-bottom: em($gtr*2);
+
+    @include breakpoint($m) {
+        padding-top: em(380);
+        padding-bottom: em(440);
+    }
+}
+
+.center-mountain {
+    @extend %wrapper;
+
+    @include breakpoint($m) {
+        padding-top: em(320);
+        padding-bottom: em(430);
+    }
+}
+
+.center-dog {
+    @extend %wrapper;
+    padding-bottom: em($gtr*2);
+
+    @include breakpoint($m) {
+        padding-top: em(380);
+        padding-bottom: em(420);
+    }
+}
+
+.center-titanic {
+    @extend %wrapper;
+    padding-bottom: em(150);
+
+    @include breakpoint($m) {
+        padding-top: em(380);
+        padding-bottom: em(420);
+    }
+}
+
+.center-02 {
+    @extend %wrapper;
+    padding-bottom: em($gtr*2);
+
+    @include breakpoint($m) {
+        padding-top: em(380);
+        padding-bottom: em(420);
+    }
+>>>>>>> gh-pages
 }

@@ -6,12 +6,22 @@
 $base-font-size   : 16;
 $base-line-height : 24;
 
+<<<<<<< HEAD
 $ff-primary   : Verdana, sans-serif;
 $ff-secondary : Georgia, serif;
 
 $fw-light      : 300;
 $fw-normal     : 400;
 $fw-medium     : 600;
+=======
+$ff-primary   : "proxima-nova", sans-serif;
+$ff-secondary : "jaf-bernino-sans-comp", sans-serif;
+
+$fw-thin       : 100;
+$fw-light      : 300;
+$fw-normal     : 400;
+$fw-semibold   : 600;
+>>>>>>> gh-pages
 $fw-bold       : 700;
 
 
@@ -23,13 +33,27 @@ $fw-bold       : 700;
 $white: #fff;
 $black: #000;
 
+<<<<<<< HEAD
+=======
+$blue: #277695;
+$dark-blue: #1d5970;
+$navy: #0F2D38;
+
+$red: #FF573B;
+$dark-red: #BF412C;
+
+>>>>>>> gh-pages
 
 //------------------------------------------------------------------------
 //  $Layout
 //------------------------------------------------------------------------
 
 
+<<<<<<< HEAD
 $max-width : 1200;
+=======
+$max-width : 960;
+>>>>>>> gh-pages
 $gtr       : 30;
 $gtr-half  : 15;
 $cols      : 12;
@@ -53,6 +77,11 @@ $xl : 1280;
 
 
 $zindex: (
+<<<<<<< HEAD
     top:    500,
     bottom: 200
+=======
+   top:    500,
+   bottom: 200
+>>>>>>> gh-pages
 );

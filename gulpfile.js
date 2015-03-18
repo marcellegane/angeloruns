@@ -49,7 +49,11 @@ gulp.task('sass', function() {
             errLogToConsole: true
         }))
         .pipe(autoprefix({
+<<<<<<< HEAD
             browsers: ['> 1%', 'Firefox > 10', 'ie 8']
+=======
+            browsers: ['> 10%', 'Firefox > 2', 'Chrome > 5', 'ie 8']
+>>>>>>> gh-pages
         }))
         .pipe(postcss([opacity]))
         .pipe(gulp.dest(paths.css))
@@ -117,7 +121,11 @@ gulp.task('watch', function() {
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.js, ['js']);
     gulp.watch(paths.jsHead, ['jsHead']);
+<<<<<<< HEAD
     gulp.watch(paths.img, ['imagemin']);
+=======
+    // gulp.watch(paths.img, ['imagemin']);
+>>>>>>> gh-pages
 });
 
 

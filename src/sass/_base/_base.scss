@@ -6,6 +6,7 @@
 *,
 :before,
 :after {
+<<<<<<< HEAD
     box-sizing: border-box;
     margin: 0;
 }
@@ -23,4 +24,28 @@ body {
 
 a {
     color: $black;
+=======
+   box-sizing: border-box;
+   margin: 0;
+}
+
+html {
+   -webkit-font-smoothing: antialiased;
+   font-size: 100%;
+}
+
+body {
+   background: $white;
+   font: em($base-font-size)/($base-line-height/$base-font-size) $ff-primary;
+   color: $white;
+}
+
+a {
+   color: $white;
+   text-decoration: none;
+}
+
+::selection {
+  background: $blue;
+>>>>>>> gh-pages
 }

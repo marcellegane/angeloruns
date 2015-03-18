@@ -1,0 +1,504 @@
+//------------------------------------------------------------------------
+//  $SVGs
+//------------------------------------------------------------------------
+
+
+.svg-container {
+   position: relative;
+   display: inline-block;
+   height: 0;
+
+   svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Kong
+//------------------------------------------------------------------------
+
+
+.kong {
+   top: em(16);
+   width: em(130);
+   padding-top: em(260);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: auto;
+      right: em(-60);
+      bottom: em(-10);
+      width: em(464);
+      padding-top: em(940);
+   }
+}
+
+.chimp__head {
+   transform-origin: 50% 50%;
+}
+
+
+//------------------------------------------------------------------------
+//  $Heels
+//------------------------------------------------------------------------
+
+
+.heels {
+   width: em(130);
+   padding-top: em(260);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      margin-top: em(-302);
+      width: em(299);
+      padding-top: em(604);
+   }
+}
+
+.heels__sweat {
+   path {
+      transform-origin: 50%;
+      animation: sweat 1.5s linear infinite;
+
+      &:first-child {
+         // display: none;
+         animation: sweat 1.5s 0.1s linear infinite;
+      }
+   }
+}
+
+@keyframes sweat {
+   0% {
+      opacity: 0;
+      transform: translateX(2em) translateY(-2em) rotate(70deg);
+   }
+
+   20% {
+      opacity: 1;
+      transform: translateX(0.5em) translateY(-2.5em) rotate(45deg);
+   }
+
+   25% {
+      transform: translateX(0.4em) translateY(-2.3em) rotate(45deg);
+   }
+
+   40% {
+      transform: translateX(0.25em) translateY(-1em) rotate(0);
+   }
+
+   60% {
+      transform: translateX(0) translateY(0) rotate(-20deg);
+   }
+
+   80% {
+      opacity: 1;
+      transform: translateX(0) translateY(0) rotate(-20deg);
+   }
+
+   100% {
+      opacity: 0;
+      transform: translateX(0) translateY(0) rotate(-20deg);
+   }
+}
+
+.tounge {
+   animation: tounge 1s ease infinite;
+}
+
+@keyframes tounge {
+   0% {
+      transform: translateX(0);
+   }
+
+   25% {
+      transform: translateX(0.05em);
+   }
+
+   50% {
+      transform: translateX(0);
+   }
+
+   75% {
+      transform: translateX(-0.05em);
+   }
+
+   100% {
+      transform: translateX();
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Space
+//------------------------------------------------------------------------
+
+
+.space {
+   width: em(230);
+   padding-top: em(260);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: em(-326);
+      width: em(550);
+      padding-top: em(652);
+   }
+}
+
+.spaceman {
+   transform-origin: 50% 50%;
+   animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+   0% {
+      transform: translate(0,0) rotate(0);
+   }
+
+   25% {
+      transform: translate(0,em(5)) rotate(1deg);
+   }
+
+   50% {
+      transform: translate(0,0) rotate(0);
+   }
+
+   75% {
+      transform: translate(0,em(5)) rotate(-1deg);
+   }
+
+   100% {
+      transform: translate(0,0) rotate(0);
+   }
+}
+
+.planet {
+   transform-origin: 50%;
+   animation: planet 3s ease infinite;
+}
+
+@keyframes planet {
+   0% {
+      transform: rotate(0)
+   }
+
+   25% {
+      transform: rotate(3deg)
+   }
+
+   75% {
+      transform: rotate(-3deg)
+   }
+
+   100% {
+      transform: rotate(0)
+   }
+}
+
+.star {
+   animation: twinkle 2s ease infinite;
+}
+
+.star1 { animation-delay: 0.2s; }
+.star2 { animation-delay: 0.4s; }
+.star3 { animation-delay: 0.6s; }
+.star4 { animation-delay: 0.8s; }
+.star5 { animation-delay: 0.1s; }
+.star6 { animation-delay: 0.3s; }
+.star7 { animation-delay: 0.5s; }
+.star8 { animation-delay: 0.7s; }
+.star10 { animation-delay: 0.9s; }
+.star11 { animation-delay: 1s; }
+.star12 { animation-delay: 1.1s; }
+.star13 { animation-delay: 1.2s; }
+.star14 { animation-delay: 1.3s; }
+
+@keyframes twinkle {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Mountain
+//------------------------------------------------------------------------
+
+
+.mountain {
+   width: em(230);
+   padding-top: em(240);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      left: em(-80);
+      bottom: 0;
+      width: em(676);
+      padding-top: em(743);
+   }
+}
+
+.snow {
+   position: absolute;
+   width: em(240);
+   padding-top: em(100);
+
+   @include breakpoint($m) {
+      top: em(40);
+      left: 0;
+      width: em(464);
+      padding-top: em(816);
+   }
+}
+
+.snowflake {
+   animation: snowfall 3s ease-in infinite;
+}
+
+.snowflake-2 {
+   animation-delay: 0.1s;
+}
+.snowflake-7 {
+   animation-delay: 0.9s;
+}
+.snowflake-6 {
+   animation-delay: 0.3s;
+}
+
+.snowflake-1 {
+   animation-delay: 0.7s;
+}
+.snowflake-5 {
+   animation-delay: 1s;
+}
+
+.snowflake-3 {
+   animation-delay: 1.4s;
+}
+.snowflake-4 {
+   animation-delay: 1.8s;
+}
+
+@keyframes snowfall {
+   0% {
+      transform: translate(0,0);
+   }
+   90% {
+      transform: translate(0,em(600));
+      opacity: 1;
+   }
+   100% {
+      transform: translate(0,em(630));
+      opacity: 0;
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Dog
+//------------------------------------------------------------------------
+
+
+.dog {
+   width: em(180);
+   padding-top: em(260);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: em(50);
+      margin-top: em(-276);
+      width: em(404);
+      padding-top: em(552);
+   }
+}
+
+.drop {
+   animation: drop 2.5s ease-in infinite;
+}
+
+.drop-2 {
+   animation-delay: 0.8s;
+}
+
+.drop-3 {
+   animation-delay: 1.4s;
+}
+
+@keyframes drop {
+   0% {
+      opacity: 1;
+      transform: translate(0,0);
+   }
+
+   75%, 100% {
+      opacity: 0;
+      transform: translate(0,em(40));
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Titanic
+//------------------------------------------------------------------------
+
+
+.titanic {
+   width: em(260);
+   padding-top: em(110);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      left: em(-200);
+      margin-top: em(-115);
+      width: em(604);
+      padding-top: em(230);
+      animation: ship 16s ease-in-out infinite;
+   }
+}
+
+@keyframes ship {
+   0% {
+      transform: translate(0,0) rotate(0);
+   }
+
+   25% {
+      transform: translate(0,em(5)) rotate(0.5deg);
+   }
+
+   50% {
+      transform: translate(0,0) rotate(0);
+   }
+
+   75% {
+      transform: translate(0,em(5)) rotate(-0.5deg);
+   }
+
+   100% {
+      transform: translate(0,0) rotate(0);
+   }
+}
+
+.iceberg1,
+.iceberg2 {
+   position: absolute;
+
+   @include breakpoint($m) {
+      width: 100%;
+   }
+}
+
+@keyframes iceberg1 {
+   0% {
+      transform: translate(-50%,0);
+   }
+   100% {
+      transform: translate(60%,0);
+   }
+}
+
+.iceberg1 {
+   left: 60%;
+   bottom: em(70);
+
+   @include breakpoint($m) {
+      bottom: em(290);
+      animation: iceberg1 70s linear infinite alternate;
+   }
+}
+
+@keyframes iceberg2 {
+   0% {
+      transform: translate(70%,0);
+   }
+
+   100% {
+      transform: translate(-40%,0);
+   }
+}
+
+.iceberg2 {
+   left: 20%;
+   bottom: em(40);
+
+   @include breakpoint($m) {
+      bottom: em(220);
+      animation: iceberg2 90s linear infinite alternate;
+   }
+}
+
+.iceberg1__svg {
+   width: em(70);
+   padding-top: em(60);
+
+   @include breakpoint($m) {
+      width: em(138);
+      padding-top: em(82);
+   }
+}
+
+.iceberg2__svg {
+   width: em(80);
+   padding-top: em(54);
+
+   @include breakpoint($m) {
+      width: em(118);
+      padding-top: em(78);
+   }
+}
+
+
+//------------------------------------------------------------------------
+//  $Dome
+//------------------------------------------------------------------------
+
+
+.dome {
+   width: em(230);
+   padding-top: em(230);
+   margin-top: em($gtr);
+
+   @include breakpoint($m) {
+      position: absolute;
+      top: 50%;
+      right: em(-120);
+      margin-top: em(-352);
+      width: em(704);
+      padding-top: em(704);
+   }
+}
+
+.dome__run {
+   transform-origin: 50%;
+   animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}

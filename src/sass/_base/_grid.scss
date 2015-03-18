@@ -4,6 +4,7 @@
 
 
 .grid {
+<<<<<<< HEAD
     @extend %clearfix;
     margin-left: em(-$gtr-half);
     margin-right: em(-$gtr-half);
@@ -17,4 +18,19 @@
 
 .col-gtr {
     padding: 0 em($gtr-half);
+=======
+   @extend %clearfix;
+   margin-left: em(-$gtr-half);
+   margin-right: em(-$gtr-half);
+}
+
+.col {
+   width: 100%;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.col-gtr {
+   padding: 0 em($gtr-half);
+>>>>>>> gh-pages
 }

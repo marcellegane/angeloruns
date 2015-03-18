@@ -15,7 +15,11 @@
 
 @import "_base/normalize"; // Simplified HTML5 normalize
 @import "_base/base";
+<<<<<<< HEAD
 @import "_base/grid";
+=======
+// @import "_base/grid";
+>>>>>>> gh-pages
 @import "_base/utilities"; // Object classes and placeholders
 
 
@@ -24,8 +28,13 @@
 //------------------------------------------------------------------------
 
 
+<<<<<<< HEAD
 @import "_typography/font-face";
 @import "_typography/headings";
+=======
+// @import "_typography/font-face";
+// @import "_typography/headings";
+>>>>>>> gh-pages
 @import "_typography/typography";
 
 
@@ -35,6 +44,10 @@
 
 
 @import "_components/buttons";
+<<<<<<< HEAD
+=======
+@import "_components/svg";
+>>>>>>> gh-pages
 
 
 //------------------------------------------------------------------------
@@ -44,5 +57,9 @@
 
 @import "_modules/layout";
 @import "_modules/header";
+<<<<<<< HEAD
 @import "_modules/navigation";
+=======
+// @import "_modules/navigation";
+>>>>>>> gh-pages
 @import "_modules/footer";
