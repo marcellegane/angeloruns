@@ -14,9 +14,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 html {
   font-size: 100%;
   /* 1 */
-  -ms-text-size-adjust: 100%;
+  -ms-t-size-adjust: 100%;
   /* 2 */
-  -webkit-text-size-adjust: 100%;
+  -webkit-t-size-adjust: 100%;
   /* 2 */ }
 
 /**
@@ -251,14 +251,14 @@ br {
 .bullet {
   padding: 0 0.75em; }
 
-.text-s {
+.t-s {
   font-size: 0.875em;
   font-weight: 700; }
 
-.text-l {
+.t-l {
   font-weight: 700; }
   @media only screen and (min-width: 30em) {
-    .text-l {
+    .t-l {
       font-size: 1.5em; } }
 
 .alpha {
@@ -273,7 +273,7 @@ br {
   .center-s .alpha {
     line-height: 1.5; }
   @media only screen and (min-width: 30em) {
-    .text-l .alpha {
+    .t-l .alpha {
       font-size: 7.08333em; } }
 
 .beta {

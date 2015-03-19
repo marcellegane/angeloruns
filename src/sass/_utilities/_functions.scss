@@ -4,11 +4,7 @@
 
 
 @function em($pixels, $context: $base-font-size) {
-<<<<<<< HEAD
-    @return #{$pixels/$context}em;
-=======
    @return #{$pixels/$context}em;
->>>>>>> gh-pages
 }
 
 
@@ -18,11 +14,7 @@
 
 
 @function ls($context) {
-<<<<<<< HEAD
-    @return #{$context/1000}em;
-=======
    @return #{$context/1000}em;
->>>>>>> gh-pages
 }
 
 
@@ -42,9 +34,5 @@
 
 
 @function col-width($col-width, $col-total: $cols) {
-<<<<<<< HEAD
-    @return unquote( (100/$col-total) * $col-width + '%' );
-=======
    @return unquote( (100/$col-total) * $col-width + '%' );
->>>>>>> gh-pages
 }

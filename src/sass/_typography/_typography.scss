@@ -3,15 +3,6 @@
 //------------------------------------------------------------------------
 
 
-<<<<<<< HEAD
-br {
-    display: none;
-    font-size: 0;
-
-    @include breakpoint($s) {
-        display: block;
-    }
-=======
 p {
    font-size: em(18);
    font-weight: $fw-light;
@@ -33,7 +24,6 @@ br {
 
 .bullet {
    padding: 0 0.75em;
->>>>>>> gh-pages
 }
 
 
@@ -42,21 +32,12 @@ br {
 //------------------------------------------------------------------------
 
 
-.text-s {
-<<<<<<< HEAD
-    font-size: em(14);
-}
-
-.text-l {
-    font-size: em(18);
-}
-
-=======
+.t-s {
    font-size: em(14);
    font-weight: $fw-bold;
 }
 
-.text-l {
+.t-l {
    font-weight: $fw-bold;
 
    @include breakpoint($s) {
@@ -81,7 +62,7 @@ br {
       line-height: 1.5;
    }
 
-   .text-l & {
+   .t-l & {
       @include breakpoint($s) {
          font-size: em(170,24);
       }
@@ -106,4 +87,3 @@ br {
       }
    }
 }
->>>>>>> gh-pages

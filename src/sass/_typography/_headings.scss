@@ -5,67 +5,35 @@
 
 h1,
 .alpha {
-<<<<<<< HEAD
-    font: em(24) $ff-primary;
-
-    @include breakpoint($m) {
-        font-size: em(54);
-    }
-=======
    font: em(24) $ff-primary;
 
    @include breakpoint($m) {
       font-size: em(54);
    }
->>>>>>> gh-pages
 }
 
 h2,
 .beta {
-<<<<<<< HEAD
-    font: em(24) $ff-primary;
-
-    @include breakpoint($m) {
-        font-size: em(36);
-    }
-=======
    font: em(14) $ff-primary;
    text-transform: uppercase;
    letter-spacing: ls(200);
->>>>>>> gh-pages
 }
 
 h3,
 .gamma {
-<<<<<<< HEAD
-    font: em(18) $ff-primary;
-
-    @include breakpoint($m) {
-        font-size: em(24);
-    }
-=======
    font: em(18) $ff-primary;
 
    @include breakpoint($m) {
       font-size: em(24);
    }
->>>>>>> gh-pages
 }
 
 h4,
 .delta {
-<<<<<<< HEAD
-    font: em(16) $ff-primary;
-
-    @include breakpoint($m) {
-        font-size: em(18);
-    }
-=======
    font: em(16) $ff-primary;
 
    @include breakpoint($m) {
       font-size: em(18);
    }
->>>>>>> gh-pages
 }
 

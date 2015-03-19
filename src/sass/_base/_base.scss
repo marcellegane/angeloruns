@@ -6,25 +6,6 @@
 *,
 :before,
 :after {
-<<<<<<< HEAD
-    box-sizing: border-box;
-    margin: 0;
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-    font-size: 100%;
-}
-
-body {
-    background: $white;
-    font: em($base-font-size)/($base-line-height/$base-font-size) $ff-primary;
-    color: $black;
-}
-
-a {
-    color: $black;
-=======
    box-sizing: border-box;
    margin: 0;
 }
@@ -47,5 +28,4 @@ a {
 
 ::selection {
   background: $blue;
->>>>>>> gh-pages
 }
